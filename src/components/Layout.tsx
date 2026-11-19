@@ -90,11 +90,6 @@ export function PublicHeader({
 
   return (
     <header className="pp-public-header sticky top-0 z-40 border-b border-[#E4E8E0] bg-[#F7F7F0]/95 backdrop-blur-sm dark:border-[#232D27] dark:bg-[#0C110E]/95">
-      {PUBLIC_DEMO_MODE && (
-        <div role="status" aria-label="Public demo limitations" className="border-b border-amber-300 bg-amber-50 px-4 py-2 text-center text-[11px] font-semibold text-amber-950 dark:border-amber-900 dark:bg-amber-950/40 dark:text-amber-100">
-          DEMO VERSION — Do not submit real personal information. Accounts, uploads, submissions and changes are disabled.
-        </div>
-      )}
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:px-8">
         {/* Zone 1: Brand Wordmark */}
         <button
