@@ -23,7 +23,7 @@ The existing post-review publication controls remain in the candidate:
 3. Public demo mode skips server-side session/cookie lookup, so a demo visitor cannot resume an authenticated account session. The public contact route also shows the demo-access notice instead of a personal-data form.
 4. `/api/health` reports `demoMode: true` when the server demo gate is enabled.
 5. Added `VITE_DEMO_MODE` frontend build switch. Production builds default to read-only unless explicitly set to `false`. Login, registration, password-reset and contact routes display a read-only demo access page. Public navigation replaces Sign In with Demo Preview.
-6. Added a global visible notice: “DEMO VERSION — Do not submit real personal information. Accounts, uploads, submissions and changes are disabled.”
+6. Removed the global demo notice from the public header; the dedicated read-only demo access page remains available.
 7. Disabled public verification submission, file selection, and community-report submission controls when frontend demo mode is enabled.
 8. Added `OLLAMA_ENABLED`; hosted deployments should set it to false. Provider status text then says the operator disabled it. Existing loopback restrictions remain.
 9. Added an API integration test for POST/PUT/PATCH/DELETE blocking, user-count invariance, demo health metadata and empty catalogue; added a provider test for the Ollama disable switch.
