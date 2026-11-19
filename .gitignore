@@ -1,0 +1,44 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# OS and editor
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local runtime data and SQLite databases (never commit user/application state)
+data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
